@@ -25,12 +25,12 @@ Companies send marketing campaigns to their entire customer base, but only a sma
 ## Repository Structure
  
 ```
-├── Capstone_RetailAnalytics_Excel_MarinaFerreira.xlsx         # Data cleaning, PivotTables, charts
-├── Capstone_RetailAnalytics_SQL_MarinaFerreira.sql             # Schema, data load, preprocessing queries
-├── Capstone_RetailAnalytics_Python_MarinaFerreira.ipynb        # EDA, univariate/bivariate analysis, Chi-Square test
-├── Capstone_RetailAnalytics_Tableau_Dashboard_MarinaFerreira   # Required dashboard (customer behavior overview)
-├── Capstone_RetailAnalytics_Dashboard_Presentation_MarinaFerreira  # Extra dashboard built for the class presentation
-├── Capstone_Presentation_MarinaFerreira.pptx                   # Final slide deck
+├── marketing-campaign-response-prediction-excel.xlsx         # Data cleaning, PivotTables, charts
+├── marketing-campaign-response-prediction-sql.sql             # Schema, data load, preprocessing queries
+├── marketing-campaign-response-prediction-python.ipynb        # EDA, univariate/bivariate analysis, Chi-Square test
+├── marketing-campaign-response-prediction-tableau              # Required dashboard (customer behavior overview)
+├── marketing-campaign-response-prediction-tableau-extra         # Extra dashboard built for the class presentation
+├── marketing-campaign-response-prediction.pptx                   # Final slide deck
 └── marketing_campaign.csv                                      # Raw dataset
 ```
  
@@ -110,7 +110,7 @@ GROUP BY Age_group
 ORDER BY Age_group;
 ```
  
-*Full script with all preprocessing queries: [`Capstone_RetailAnalytics_SQL_MarinaFerreira.sql`](./Capstone_RetailAnalytics_SQL_MarinaFerreira.sql)*
+*Full script with all preprocessing queries: [`marketing-campaign-response-prediction-sql.sql`](./marketing-campaign-response-prediction-sql.sql)*
  
 ### 3. Exploratory Data Analysis & Statistical Testing (Python)
  
@@ -175,7 +175,7 @@ response_rate_by_edu = df.groupby('Education')['Response'].mean().sort_values(as
 print(response_rate_by_edu)
 ```
  
-*Full notebook: [`Capstone_RetailAnalytics_Python_MarinaFerreira.ipynb`](./Capstone_RetailAnalytics_Python_MarinaFerreira.ipynb)*
+*Full notebook: [`marketing-campaign-response-prediction-python.ipynb`](./marketing-campaign-response-prediction-python.ipynb)*
  
 ### 4. Visualization (Tableau)
  
@@ -183,4 +183,4 @@ Built distribution, comparison, and relationship charts (boxplots, packed bubble
  
 ## Presentation
  
-The full findings are summarized in `Capstone_Presentation_MarinaFerreira.pptx`, an 11-slide deck covering the business question, methodology, key findings, and final recommendation.
+The full findings are summarized in `marketing-campaign-response-prediction.pptx`, an 11-slide deck covering the business question, methodology, key findings, and final recommendation.
